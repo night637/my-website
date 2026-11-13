@@ -1,0 +1,330 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0d0d0d;
+    color: white;
+}
+
+header {
+    background-color: #151515;
+    padding: 35px;
+    text-align: center;
+    border-bottom: 3px solid #ff3b00;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 40px;
+    color: #ff3b00;
+}
+
+header p {
+    color: #aaa;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    width: 100%;
+    background-color: #111;
+    padding: 15px 30px;
+    border-bottom: 1px solid #333;
+}
+
+nav h2 {
+    color: #ff3b00;
+    margin: 0 20px 0 0;
+}
+
+nav a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 12px 15px;
+    border-bottom: 2px solid transparent;
+    transition: 0.2s;
+}
+
+nav a:hover {
+    color: #ff3b00;
+    border-bottom-color: #ff3b00;
+}
+
+main {
+    padding: 25px;
+}
+
+article {
+    width: 100%;
+    padding: 25px;
+    background-color: #191919;
+    min-height: 500px;
+}
+
+.welcome-box {
+    background-color: #202062;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+h1 {
+    color: #ff3b00;
+}
+
+.mcdonalds {
+    color: red;
+}
+
+.menu-title,
+.title {
+    color: #ff3b00;
+}
+
+.title {
+    margin-top: 40px;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    background-color: #222;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.hero h1 {
+    font-size: 35px;
+    color: #ff3b00;
+}
+
+.hero p {
+    color: #ccc;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.hero img {
+    width: 220px;
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+.button,
+.burger-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 20px;
+    background-color: #ff3b00;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.2s;
+}
+
+.button:hover,
+.burger-button:hover {
+    background-color: #ff6500;
+}
+
+.menu-list {
+    background-color: hotpink;
+    color: black;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.burger-text {
+    background-color: beige;
+    color: black;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.burger-text p {
+    color: purple;
+}
+
+.burger-text span {
+    border: 5px dotted purple;
+    padding: 5px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    flex: 1 1 220px;
+    background-color: #242424;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #333;
+    transition: border-color 0.2s;
+}
+
+.card:hover {
+    border-color: #ff3b00;
+}
+
+.card h3 {
+    color: #ff3b00;
+}
+
+.card p {
+    color: #bbb;
+    line-height: 1.5;
+}
+
+.card strong {
+    font-size: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid white;
+}
+
+th,
+td {
+    border: 1px solid white;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #242424;
+    color: #ff3b00;
+}
+
+footer {
+    clear: both;
+    background-color: #111;
+    padding: 20px;
+    text-align: center;
+    color: #777;
+    border-top: 1px solid #333;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.burger-info {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    background-color: #202020;
+    padding: 20px;
+    margin: 25px 0;
+    border-radius: 12px;
+    max-width: 750px;
+}
+
+.burger-info img {
+    width: 220px;
+    max-width: 40%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.burger-details {
+    flex: 1;
+}
+
+.burger-details h2,
+.burger-details h3 {
+    color: #ff3b00;
+}
+
+.burger-details h2 {
+    margin-top: 0;
+}
+
+.burger-details p {
+    line-height: 1.6;
+}
+
+@media (max-width: 700px) {
+    header {
+        padding: 25px 15px;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    nav {
+        gap: 5px;
+        padding: 12px;
+    }
+
+    nav h2 {
+        width: 100%;
+        margin: 0 0 5px;
+    }
+
+    nav a {
+        padding: 10px;
+    }
+
+    article {
+        padding: 15px;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    .hero {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero img {
+        width: 180px;
+        align-self: center;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    .burger-info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .burger-info img {
+        max-width: 100%;
+        width: 220px;
+    }
+}
+.burger-description {
+    font-weight: 900;
+    font-size: 22px;
+}
